@@ -64,9 +64,10 @@ def toYOLO(data, yolo_ann_path):
     
     for e in data.values():
         e = e[0]
+        
         for i, bbox in enumerate(e['bbox']):
-            xc = (bbox[0]+bbox[2])/e['width']
-            yc = (bbox[1]+bbox[3])/e['height']
+            xc = (bbox[0]+(bbox[2]/2))/e['width']
+            yc = (bbox[1]+(bbox[3]/2))/e['height']
             width = bbox[2]/e['width']
             height = bbox[3]/e['height']
             
