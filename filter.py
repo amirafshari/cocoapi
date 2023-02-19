@@ -80,7 +80,7 @@ def toYOLO(data, yolo_ann_path):
     print('Done!')
 
 
-# [bird,cat,dog, backpack,umbrella,handbag,suitcase, chair,couch,dining table, ,laptop,cellphone,book]
+# ['bicycle', 'car', 'motorcycle', 'bus', 'truck', 'bird', 'cat', 'dog', 'backpack', 'umbrella', 'handbag', 'suitcase', 'chair', 'couch', 'desk', 'laptop', 'cell phone', 'book']
 cat_ids = [2,3,4,6,8, 16,17,18, 27,28,31,33, 62,63,69, 73,77, 84] 
 new_ann_path = 'annotations/new_instances_train2017.json'
 coco_json_path = 'annotations/instances_train2017.json'
